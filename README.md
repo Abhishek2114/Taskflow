@@ -1,95 +1,103 @@
 # Taskora
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./taskflow-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./taskflow-light.svg">
-    <img src="./taskflow-light.svg" alt="Taskora logo" width="220" />
-  </picture>
-</p>
+<div align="center">
+  <img src="./taskflow-light.svg" alt="Taskora Logo" width="220" />
+</div>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Frontend-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Frontend Netlify" />
   <img src="https://img.shields.io/badge/Backend-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white" alt="Backend Railway" />
   <img src="https://img.shields.io/badge/Database-MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="Database MongoDB" />
-  <img src="https://img.shields.io/badge/Auth-JWT-black?style=for-the-badge" alt="Authentication JWT" />
-  <img src="https://img.shields.io/badge/UI-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="UI Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Auth-JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT Auth" />
+  <img src="https://img.shields.io/badge/UI-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Stack-Fullstack-2563EB?style=for-the-badge" alt="Fullstack" />
 </p>
 
 <p align="center">
-  <strong>Plan • Assign • Track • Deliver</strong>
+  <strong>Plan smarter. Assign clearly. Deliver faster.</strong>
 </p>
 
-Taskora is a modern team productivity platform designed to help teams manage projects, assign tasks, and monitor execution in one clean workflow. It blends the clarity of Kanban boards with the structure of project management dashboards, creating a SaaS-style experience that feels fast, focused, and production-ready.
+<p align="center">
+  <a href="https://task-flow-sh.netlify.app/" target="_blank"><img src="https://img.shields.io/badge/Live%20Demo-Live%20App-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo" /></a>
+  <a href="https://task-flow-sh.up.railway.app/api/" target="_blank"><img src="https://img.shields.io/badge/API-Backend%20Docs-111827?style=for-the-badge&logo=railway&logoColor=white" alt="Backend API" /></a>
+  <a href="https://github.com/Abhishek2114/Taskora/stargazers" target="_blank"><img src="https://img.shields.io/badge/Stars-Show%20Love-%23fbbf24?style=for-the-badge&logo=github&logoColor=white" alt="Star on GitHub" /></a>
+</p>
 
-## Live Demo
+Taskora is a modern team productivity platform built for fast-moving teams that need structure without friction. It combines project planning, task ownership, dashboard visibility, and workflow tracking into one clean SaaS-style experience.
 
-- Frontend: https://task-flow-sh.netlify.app/
-- Backend API: https://task-flow-sh.up.railway.app/api/
+From product planning to execution, Taskora helps teams stay aligned, reduce ambiguity, and move work forward with clarity.
 
-## Why Taskora?
+## Why teams use Taskora
 
-Taskora helps teams:
+- Organize work into structured projects
+- Assign ownership with clear accountability
+- Track progress in real time across teams
+- Prioritize critical work using task states and urgency
+- Keep execution visible through dashboards and analytics
 
-- organize work into projects and milestones
-- assign ownership with clear task responsibilities
-- monitor progress through real-time status tracking
-- identify blockers, delays, and overdue work
-- keep collaboration structured without adding complexity
+## Product snapshot
 
-Built with a scalable full-stack architecture, Taskora is designed to simulate a real-world SaaS product experience while staying easy to run locally and expand further.
+<div align="center">
+  <img src="./taskflow-light.svg" alt="Taskora app preview" width="720" />
+</div>
 
-## Features
+<p align="center">
+  <em>Branding preview for Taskora — designed for modern workflow products.</em>
+</p>
 
-### Authentication & Security
+## Core features
 
-- JWT-based authentication
-- Secure signup and login flow
-- Password hashing with bcrypt
-- Protected API routes
+### Team workflow management
 
-### Role-Based Access
+- Create and manage multiple projects
+- Invite and assign teammates to each project
+- Track responsibilities across every workstream
+- Visualize progress from backlog to completion
 
-- Admin access for project-wide management
-- Member access for task updates and assigned work
+### Task execution engine
 
-### Project Management
+- Create, edit, delete, and assign tasks
+- Status tracking: TODO, IN_PROGRESS, DONE
+- Prioritization: LOW, MEDIUM, HIGH
+- Due date tracking and overdue monitoring
+- Search, filtering, and project-specific task views
 
-- Create and manage projects
-- Add teammates to projects
-- View project details and progress
-- Track project health with workload insights
+### Operational visibility
 
-### Task Management
+- Dashboard metrics for total tasks, completed work, pending work, and overdue tasks
+- High-priority workload visibility
+- Recent activity trends and project insights
+- Real-time task health monitoring
 
-- Create, update, delete, and assign tasks
-- Status workflow: TODO, IN_PROGRESS, DONE
-- Priority levels: LOW, MEDIUM, HIGH
-- Due date tracking and overdue detection
-- Search and filter task views
+### Product experience
 
-### Dashboard & Analytics
+- Kanban-style board by default
+- Optional table view for workflows and reporting
+- Dark mode and light mode support
+- Responsive SaaS-inspired interface
+- Loading states, empty states, and toast feedback
 
-- Total tasks
-- Completed and pending tasks
-- Overdue workload
-- High-priority alerts
-- Recent activity overview
-- Project health summary
+## Architecture overview
 
-### Product Experience
+```mermaid
+flowchart LR
+    A[User] --> B[Frontend - React + Vite]
+    B --> C[API Gateway - Express.js]
+    C --> D[Auth Layer - JWT / bcrypt]
+    C --> E[Project & Task Services]
+    E --> F[(MongoDB Atlas)]
 
-- Kanban board interface by default
-- Table view toggle
-- Dark mode with light mode support
-- Responsive and clean SaaS-style layout
-- Loading, empty, and notification states
+    G[Admin / Member Roles] --> B
+    H[Project Dashboard] --> B
+    I[Task Management] --> C
+```
 
-## Tech Stack
+## Tech stack
 
 ### Frontend
 
-- React + Vite
+- React
+- Vite
 - Tailwind CSS
 - Axios
 - React Router
@@ -100,38 +108,73 @@ Built with a scalable full-stack architecture, Taskora is designed to simulate a
 - Node.js
 - Express.js
 - MongoDB + Mongoose
-- JWT authentication
+- JWT Authentication
 - bcrypt
 - dotenv
 - cors
 
 ### Deployment
 
-- Frontend: Netlify
-- Backend: Railway
-- Database: MongoDB Atlas
+- Netlify for frontend hosting
+- Railway for backend deployment
+- MongoDB Atlas for persistent data storage
 
-## Project Structure
+## Solution architecture
+
+Taskora follows a clean three-layer architecture designed for maintainability and product scalability:
+
+1. Presentation Layer
+   - React frontend for user interactions and workflow UI
+   - Tailwind-based responsive design
+   - Dashboard and task management views
+
+2. Application Layer
+   - Express API for business logic and routing
+   - Auth middleware and access control
+   - Project and task service processing
+
+3. Data Layer
+   - MongoDB schema-based models
+   - Structured records for users, projects, and tasks
+   - Secure and scalable persistence for long-term product use
+
+## Platform highlights
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Role%20Based%20Access-Admin%20%2B%20Member-8B5CF6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Project%20Tracking-Enabled-10B981?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Task%20Board-Kanban%20%2B%20Table-3B82F6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Analytics-Dashboard-EC4899?style=for-the-badge" />
+</p>
+
+## Live app
+
+- Frontend: https://task-flow-sh.netlify.app/
+- Backend API: https://task-flow-sh.up.railway.app/api/
+
+## Project structure
 
 ```bash
 taskora/
-├── frontend/          # React + Vite client
+├── frontend/                 # React app
 │   ├── src/
 │   ├── public/
 │   └── package.json
-├── backend/           # Express API server
+├── backend/                  # Express API
 │   ├── src/
 │   ├── routes/
 │   ├── controllers/
 │   ├── models/
 │   └── package.json
-├── taskflow-light.svg # branding asset
-├── taskflow-dark.svg  # branding asset
+├── taskflow-light.svg        # branding asset
+├── taskflow-dark.svg         # dark branding asset
+├── taskflow-favicon.png      # app icon
+├── netlify.toml              # Netlify configuration
 ├── README.md
-└── netlify.toml
+└── .gitignore
 ```
 
-## Local Setup
+## Local setup
 
 ### 1. Clone the repository
 
@@ -150,33 +193,33 @@ cd ../frontend
 npm install
 ```
 
-### 3. Start the backend
+### 3. Run the backend
 
 ```bash
 cd backend
 npm run dev
 ```
 
-API will run at:
+Backend URL:
 
 ```text
 http://localhost:5000/api
 ```
 
-### 4. Start the frontend
+### 4. Run the frontend
 
 ```bash
 cd frontend
 npm run dev
 ```
 
-The app will run at:
+Frontend URL:
 
 ```text
 http://localhost:5173
 ```
 
-## Environment Variables
+## Environment variables
 
 ### Backend (.env)
 
@@ -193,14 +236,14 @@ CLIENT_URL=https://task-flow-sh.netlify.app
 VITE_API_URL=https://task-flow-sh.up.railway.app/api
 ```
 
-## Seed Demo Data
+## Seed demo data
 
 ```bash
 cd backend
 npm run seed
 ```
 
-This creates:
+Creates:
 
 - admin user
 - member user
@@ -212,7 +255,7 @@ This creates:
 - Admin: `admin@admin.com` / `Admin@123`
 - Member: `member@member.com` / `Member@123`
 
-## API Overview
+## API overview
 
 ### Authentication
 
@@ -244,21 +287,23 @@ This creates:
 
 - `GET /api/dashboard/stats`
 
-## Design Philosophy
+## Product philosophy
+
+Taskora is built around a simple principle: teams should be able to plan, assign, and execute work without friction.
+
+We focus on:
 
 - simplicity over complexity
 - clarity over clutter
-- maintainable architecture
-- real-world SaaS workflow design
-- usability-first product experience
+- scalable architecture over short-term hacks
+- product polish over generic dashboards
+- real-world workflow design over demo-only features
 
-## Highlights
+## Built for momentum
 
-- Full-stack team productivity app
-- production-ready workflow structure
-- role-based access control
-- clean modern interface
-- deployment-ready stack
+Taskora is designed for product teams, startups, and internal operations teams that want to move quickly without losing structure.
+
+It brings together the essentials of modern collaboration tools while remaining lightweight enough to run and extend locally.
 
 ## Author
 
@@ -268,4 +313,4 @@ This creates:
 
 ## Support
 
-If you found Taskora useful, please consider giving the project a star ⭐
+If this project helped you or inspired your workflow, give it a star ⭐ and share it with your team.
