@@ -1,7 +1,7 @@
 # Taskora
 
 <div align="center">
-  <img src="./taskflow-light.svg" alt="Taskora Logo" width="220" />
+  <img src="./taskora-light.svg" alt="Taskora Logo" width="220" />
 </div>
 
 <p align="center">
@@ -18,12 +18,12 @@
 </p>
 
 <p align="center">
-  <a href="https://task-flow-sh.netlify.app/" target="_blank"><img src="https://img.shields.io/badge/Live%20Demo-Live%20App-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo" /></a>
-  <a href="https://task-flow-sh.up.railway.app/api/" target="_blank"><img src="https://img.shields.io/badge/API-Backend%20Docs-111827?style=for-the-badge&logo=railway&logoColor=white" alt="Backend API" /></a>
-  <a href="https://github.com/Abhishek2114/Taskora/stargazers" target="_blank"><img src="https://img.shields.io/badge/Stars-Show%20Love-%23fbbf24?style=for-the-badge&logo=github&logoColor=white" alt="Star on GitHub" /></a>
+  <a href="https://taskora-sh.netlify.app/" target="_blank"><img src="https://img.shields.io/badge/Live%20Demo-Live%20App-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo" /></a>
+  <a href="https://taskora-sh.up.railway.app/api/" target="_blank"><img src="https://img.shields.io/badge/API-Backend%20Docs-111827?style=for-the-badge&logo=railway&logoColor=white" alt="Backend API Docs" /></a>
+  <a href="https://github.com/Abhishek2114/Taskora/stargazers" target="_blank"><img src="https://img.shields.io/badge/Stars-Show%20Love-%23fbbf24?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Stars" /></a>
 </p>
 
-Taskora is a modern team productivity platform built for fast-moving teams that need structure without friction. It combines project planning, task ownership, dashboard visibility, and workflow tracking into one clean SaaS-style experience.
+Taskora is a modern team productivity platform built for fast-moving teams that need structure without friction. It combines project planning, task ownership, dashboard visibility, and workflow tracking into one streamlined experience.
 
 From product planning to execution, Taskora helps teams stay aligned, reduce ambiguity, and move work forward with clarity.
 
@@ -38,7 +38,7 @@ From product planning to execution, Taskora helps teams stay aligned, reduce amb
 ## Product snapshot
 
 <div align="center">
-  <img src="./taskflow-light.svg" alt="Taskora app preview" width="720" />
+  <img src="./taskora-light.svg" alt="Taskora app preview" width="720" />
 </div>
 
 <p align="center">
@@ -149,8 +149,8 @@ Taskora follows a clean three-layer architecture designed for maintainability an
 
 ## Live app
 
-- Frontend: https://task-flow-sh.netlify.app/
-- Backend API: https://task-flow-sh.up.railway.app/api/
+- Frontend: https://taskora-sh.netlify.app/
+- Backend API: https://taskora-sh.up.railway.app/api/
 
 ## Project structure
 
@@ -166,9 +166,9 @@ taskora/
 │   ├── controllers/
 │   ├── models/
 │   └── package.json
-├── taskflow-light.svg        # branding asset
-├── taskflow-dark.svg         # dark branding asset
-├── taskflow-favicon.png      # app icon
+├── taskora-light.svg         # branding asset
+├── taskora-dark.svg          # dark branding asset
+├── taskora-favicon.png       # app icon
 ├── netlify.toml              # Netlify configuration
 ├── README.md
 └── .gitignore
@@ -227,13 +227,13 @@ http://localhost:5173
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
-CLIENT_URL=https://task-flow-sh.netlify.app
+CLIENT_URL=https://taskora-sh.netlify.app
 ```
 
 ### Frontend (.env)
 
 ```env
-VITE_API_URL=https://task-flow-sh.up.railway.app/api
+VITE_API_URL=https://taskora-sh.up.railway.app/api
 ```
 
 ## Seed demo data
