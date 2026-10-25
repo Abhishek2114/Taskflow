@@ -1,7 +1,7 @@
-# Taskora
+# Taskflow
 
 <div align="center">
-  <img src="./taskflow-light.svg" alt="Taskora Logo" width="220" />
+  <img src="./taskflow-light.svg" alt="Taskflow Logo" width="220" />
 </div>
 
 <p align="center">
@@ -20,14 +20,14 @@
 <p align="center">
   <a href="https://task-flow-sh.netlify.app/" target="_blank"><img src="https://img.shields.io/badge/Live%20Demo-Live%20App-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo" /></a>
   <a href="https://task-flow-sh.up.railway.app/api/" target="_blank"><img src="https://img.shields.io/badge/API-Backend%20Docs-111827?style=for-the-badge&logo=railway&logoColor=white" alt="Backend API" /></a>
-  <a href="https://github.com/Abhishek2114/Taskora/stargazers" target="_blank"><img src="https://img.shields.io/badge/Stars-Show%20Love-%23fbbf24?style=for-the-badge&logo=github&logoColor=white" alt="Star on GitHub" /></a>
+  <a href="https://github.com/Abhishek2114/Taskflow/stargazers" target="_blank"><img src="https://img.shields.io/badge/Stars-Show%20Love-%23fbbf24?style=for-the-badge&logo=github&logoColor=white" alt="GitHub stars" /></a>
 </p>
 
-Taskora is a modern team productivity platform built for fast-moving teams that need structure without friction. It combines project planning, task ownership, dashboard visibility, and workflow tracking into one clean SaaS-style experience.
+Taskflow is a modern team productivity platform built for fast-moving teams that need structure without friction. It combines project planning, task ownership, dashboard visibility, and workflow execution in one streamlined system.
 
-From product planning to execution, Taskora helps teams stay aligned, reduce ambiguity, and move work forward with clarity.
+From product planning to execution, Taskflow helps teams stay aligned, reduce ambiguity, and move work forward with clarity.
 
-## Why teams use Taskora
+## Why teams use Taskflow
 
 - Organize work into structured projects
 - Assign ownership with clear accountability
@@ -38,11 +38,11 @@ From product planning to execution, Taskora helps teams stay aligned, reduce amb
 ## Product snapshot
 
 <div align="center">
-  <img src="./taskflow-light.svg" alt="Taskora app preview" width="720" />
+  <img src="./taskflow-light.svg" alt="Taskflow app preview" width="720" />
 </div>
 
 <p align="center">
-  <em>Branding preview for Taskora — designed for modern workflow products.</em>
+  <em>Branding preview for Taskflow — designed for modern workflow products.</em>
 </p>
 
 ## Core features
@@ -121,7 +121,7 @@ flowchart LR
 
 ## Solution architecture
 
-Taskora follows a clean three-layer architecture designed for maintainability and product scalability:
+Taskflow follows a clean three-layer architecture designed for maintainability and product scalability:
 
 1. Presentation Layer
    - React frontend for user interactions and workflow UI
@@ -155,7 +155,7 @@ Taskora follows a clean three-layer architecture designed for maintainability an
 ## Project structure
 
 ```bash
-taskora/
+taskflow/
 ├── frontend/                 # React app
 │   ├── src/
 │   ├── public/
@@ -179,8 +179,8 @@ taskora/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Abhishek2114/Taskora.git
-cd Taskora
+git clone https://github.com/Abhishek2114/Taskflow.git
+cd Taskflow
 ```
 
 ### 2. Install dependencies
@@ -289,7 +289,7 @@ Creates:
 
 ## Product philosophy
 
-Taskora is built around a simple principle: teams should be able to plan, assign, and execute work without friction.
+Taskflow is built around a simple principle: teams should be able to plan, assign, and execute work without friction.
 
 We focus on:
 
@@ -301,7 +301,7 @@ We focus on:
 
 ## Built for momentum
 
-Taskora is designed for product teams, startups, and internal operations teams that want to move quickly without losing structure.
+Taskflow is designed for product teams, startups, and internal operations teams that want to move quickly without losing structure.
 
 It brings together the essentials of modern collaboration tools while remaining lightweight enough to run and extend locally.
 
