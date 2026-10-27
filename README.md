@@ -307,8 +307,6 @@ It brings together the essentials of modern collaboration tools while remaining 
 
 ## Author
 
-**abhisheksinghrajput2124@gmail.com**
-
 - Email: [abhisheksinghrajput2124@gmail.com](mailto:abhisheksinghrajput2124@gmail.com)
 
 ## Support
