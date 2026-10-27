@@ -307,9 +307,9 @@ It brings together the essentials of modern collaboration tools while remaining 
 
 ## Author
 
-**Priyanshu Shroti**
+**abhisheksinghrajput2124@gmail.com**
 
-- Email: [priyanshushroti@gmail.com](mailto:priyanshushroti@gmail.com)
+- Email: [abhisheksinghrajput2124@gmail.com](mailto:abhisheksinghrajput2124@gmail.com)
 
 ## Support
 
